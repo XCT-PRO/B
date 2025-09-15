@@ -1,3 +1,11 @@
+name: Check Windows OS
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Manual Run এর জন্য
+
 jobs:
   check-os:
     runs-on: windows-latest
